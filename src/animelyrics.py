@@ -19,11 +19,13 @@ class AnimeLyrics:
 		html = requests.get(self.PAGE_URL)
 		self.SOUP = BeautifulSoup(html.text, 'html5lib')
 
-	def lyrics(self):
+	# LANG: en > english, jp > romaji
+	def lyrics(self, lang):
+
+		# determine what type of table structure
 		tdSearch = self.SOUP.findAll("td", {
 			"class" : "translation"
 		});
-
 		count = 0
 		for element in tdSearch:
 			count = count + 1
@@ -32,25 +34,30 @@ class AnimeLyrics:
 
 		# --------------------- TABLES WITHOUT TRANSLATIONS ---------------------
 		if count == 0:
+			if lang == "en":
+				return "No English Translation Available"
+
 			result = self.find_between(self.SOUP.text, "Lyrics from Animelyrics.com", "Transliterated")
 			lyrics.append(result.replace("\xa0", " ").strip())
 
 		# --------------------- TABLES WITH TRANSLATIONS ------------------------
-		elif count == 2:
+		else:
 			for linebreak in self.SOUP.find_all('br'):
 			    linebreak.extract()
 			for line in self.SOUP.find_all('dt'):
 			    line.extract()
 
+			if lang == "en":
+				classTicker = "translation"
+			else:
+				classTicker = "romaji"
+
 			mydivs = self.SOUP.findAll("td", {
-				"class" : "romaji"
+				"class" : classTicker
 			});
 
 			for x in mydivs:
 				lyrics.append(x.text.replace("\xa0", " ").strip())
-
-		else: 
-			lyrics.append("Unsupported Format")
 
 		return ", ".join(lyrics)
 

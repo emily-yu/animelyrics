@@ -1,10 +1,10 @@
 from animelyrics import AnimeLyrics
 
-al = AnimeLyrics("caste room")
+al = AnimeLyrics("catch in the moment")
 
 print("------------------------------------------")
 print("LYRICS:")
-print(al.lyrics())
+print(al.lyrics("jp"))
 print("------------------------------------------")
 print("TITLE:")
 print(al.song_title())

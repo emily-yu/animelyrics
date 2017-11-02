@@ -1,20 +1,18 @@
-# animelyrics
+# animelyric
 -------------
 
 Description
 ~~~~~~~~~~~
 
-Animelyrics is a python library for retrieving lyrics for anime songs
+Animelyric is a python library for retrieving lyrics for anime songs
 from animelyrics dot com.
 
 Table of Contents
 ~~~~~~~~~~~~~~~~~
 
--  Requirements
--  Installation
--  Usage
--  Examples
--  Contact
+-  Requirements_
+-  Installation_
+-  Usage_
 
 Requirements
 ~~~~~~~~~~~~
@@ -25,20 +23,20 @@ Requirements
 -  google
 -  urllib.parse
 
-Install
-~~~~~~~
+Installation
+~~~~~~~~~~~~
 
 Using pip
 
 ::
 
-    pip install animelyrics 
+    pip install animelyric
 
-or clone and install: 
+or clone and install:
 ::
 
     git clone https://github.com/emily-yu/animelyrics.git
-    cd animelyrics
+    cd animelyric
     python setup.py
 
 Usage
@@ -46,7 +44,7 @@ Usage
 
 ::
 
-    from animelyrics import AnimeLyrics
+    from animelyric import AnimeLyrics
     al = AnimeLyrics('[keyword-to-search]')
 
 +------------+------------------------------------+

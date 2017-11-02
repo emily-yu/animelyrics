@@ -11,11 +11,11 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     # details
-    name='animelyrics',
-    version='1.0.0',
+    name='animelyric',
+    version='1.0.4',
     description='Retrieving anime lyrics for songs',
     long_description=long_description,
-    url='https://github.com/emily-yu/anime',
+    url='https://github.com/emily-yu/animelyrics',
 
     # author
     author='Emily Yu',
@@ -50,5 +50,5 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['urllib.request', 'bs4', 'requests', 'google', 'urllib.parse'],
+    install_requires=['requests', 'google'],
 )

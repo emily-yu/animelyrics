@@ -1,5 +1,0 @@
-urllib.request
-bs4
-requests
-google
-urllib.parse

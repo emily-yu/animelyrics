@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/animelyrics.py
+src/animelyric.egg-info/PKG-INFO
+src/animelyric.egg-info/SOURCES.txt
+src/animelyric.egg-info/dependency_links.txt
+src/animelyric.egg-info/not-zip-safe
+src/animelyric.egg-info/requires.txt
+src/animelyric.egg-info/top_level.txt

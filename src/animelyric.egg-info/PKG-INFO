@@ -1,0 +1,78 @@
+Metadata-Version: 1.2
+Name: animelyric
+Version: 1.0.4
+Summary: Retrieving anime lyrics for songs
+Home-page: https://github.com/emily-yu/animelyrics
+Author: Emily Yu
+Author-email: eyudeveloper@gmail.com
+License: MIT
+Description: # animelyric
+        -------------
+        
+        Description
+        ~~~~~~~~~~~
+        
+        Animelyrics is a python library for retrieving lyrics for anime songs
+        from animelyrics dot com.
+        
+        Table of Contents
+        ~~~~~~~~~~~~~~~~~
+        
+        -  Requirements
+        -  Installation
+        -  Usage
+        -  Examples
+        -  Contact
+        
+        Requirements
+        ~~~~~~~~~~~~
+        
+        -  urllib.request
+        -  bs4
+        -  requests
+        -  google
+        -  urllib.parse
+        
+        Install
+        ~~~~~~~
+        
+        Using pip
+        
+        ::
+        
+            pip install animelyric
+        
+        or clone and install: 
+        ::
+        
+            git clone https://github.com/emily-yu/animelyrics.git
+            cd animelyric
+            python setup.py
+        
+        Usage
+        ~~~~~
+        
+        ::
+        
+            from animelyrics import AnimeLyrics
+            al = AnimeLyrics('[keyword-to-search]')
+        
+        +------------+------------------------------------+
+        | Function   | Parameter                          |
+        +============+====================================+
+        | init       | keyword-to-search                  |
+        +------------+------------------------------------+
+        | lyrics     | lang (en: English, jp: Japanese)   |
+        +------------+------------------------------------+
+        
+Keywords: anime development http
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3

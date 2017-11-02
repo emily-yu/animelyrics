@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: animelyrics
+Version: 1.0.0
+Summary: Retrieving anime lyrics for songs
+Home-page: https://github.com/emily-yu/anime
+Author: Emily Yu
+Author-email: eyudeveloper@gmail.com
+License: MIT
+Description: # animelyrics
+Keywords: anime development http
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3

@@ -37,7 +37,7 @@ Using pip
 or clone and install: 
 ::
 
-    git clone https://github.com/emily-yu/anime.git 
+    git clone https://github.com/emily-yu/animelyrics.git
     cd animelyrics
     python setup.py
 

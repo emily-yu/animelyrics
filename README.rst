@@ -44,7 +44,7 @@ Usage
 
 ::
 
-    from animelyric import AnimeLyrics
+    from animelyrics import AnimeLyrics
     al = AnimeLyrics('[keyword-to-search]')
 
 +------------+------------------------------------+

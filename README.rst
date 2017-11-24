@@ -1,4 +1,4 @@
-# animelyrics
+animelyrics
 -------------
 
 Description
